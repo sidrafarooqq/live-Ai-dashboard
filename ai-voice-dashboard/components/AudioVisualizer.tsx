@@ -12,7 +12,7 @@ import { drawPulsingCircle, drawSoundBars, drawSpinner, drawWaveform } from '@/l
  */
 export function AudioVisualizer({ state, canvasRef }: AudioVisualizerProps) {
   const frameRef = useRef(0);
-  const animationIdRef = useRef<number>();
+  const animationIdRef = useRef<number | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;

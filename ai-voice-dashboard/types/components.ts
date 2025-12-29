@@ -3,7 +3,7 @@ import React from 'react';
 
 export interface AudioVisualizerProps {
   state: AgentState;
-  canvasRef: React.RefObject<HTMLCanvasElement>;
+  canvasRef: React.RefObject<HTMLCanvasElement | null>;
 }
 
 export interface LiveTranscriptProps {
